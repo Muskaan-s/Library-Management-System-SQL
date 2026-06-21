@@ -1,72 +1,67 @@
-# 📚 Library Management System using SQL
+# 📚 Library Management System using SQL---
 
-## Project Overview
-This project is a Library Management System developed using SQL.  
-It is designed to manage library data such as authors, books, members, and
-borrowing records efficiently using relational database concepts.
-
-The system allows storing, retrieving, and managing data using SQL queries.
+## 🧠 What I built
+A database system that simulates how a real library stores and manages its data using SQL.
 
 ---
 
-## Database Name
-LIBRARYMANAGEMENT
+## 🔧 What I actually did (in order)
+- Created a database
+- Designed tables with relationships
+- Inserted large sample data
+- Connected tables using foreign keys
+- Tested everything using SELECT queries
 
 ---
 
-## Tables Used
-
-### 1. Authors
-Stores information about authors such as name and country.
-
-### 2. Books
-Stores book details and links each book to an author.
-
-### 3. Members
-Stores details of library members such as name, email, and phone number.
-
-### 4. BorrowRecords
-Stores information about book borrowing and return details, linking members and books.
+## 🗃️ Database structure I used
+4 main tables:
+- Authors
+- Books
+- Members
+- BorrowRecords
 
 ---
 
- ## 5.Relationships
-- One author can have multiple books  
-- One member can borrow multiple books  
-- Each borrow record connects a member and a book  
+## ⚙️ How the system works (simple flow)
+Authors → write Books  
+Members → borrow Books  
+BorrowRecords → tracks who took what and when  
 
 ---
 
- ## 6.Features of the Project
-- Create and manage database using SQL  
-- Create relational tables with primary and foreign keys  
-- Insert sample data into tables  
-- Perform data retrieval using SQL SELECT queries  
-- Track borrowing and returning of books  
-- Maintain structured library records  
+## 💻 What I practiced
+- SQL table creation  
+- Primary & Foreign keys  
+- Data insertion (bulk data)  
+- Data retrieval queries  
+- Relational mapping  
 
 ---
 
- ## Files Included in This Project
-
-- database_schema.sql → Contains database creation and table structures  
-- sample_data.sql → Contains INSERT statements for all tables  
-- queries.sql → Contains SELECT queries for data retrieval  
-- screenshots/ → Contains output screenshots of tables and queries  
-- README.md → Project documentation  
+## 📌 Important part of project
+The main idea was to connect multiple tables using relationships instead of keeping data separately.
 
 ---
 
-## 📌 Sample SQL Queries
+## 📁 Project files
+- database_schema.sql  
+- sample_data.sql  
+- queries.sql  
+- screenshots
+   *Authors_Table
+   *Books_Table
+   *BorrowRecords_Table
+   *Members_Table
+   *Outputs-1,2 and 3
+- report.pdf  
 
--- View all authors
-SELECT * FROM Authors;
+---
 
--- View all books
-SELECT * FROM Books;
+## 🎯 Result
+A working relational database that stores and retrieves library data successfully using SQL queries.
 
--- View all members
-SELECT * FROM Members;
+---
 
--- View all borrow records
-SELECT * FROM BorrowRecords;
+## 👤 Built by
+Muskaan
