@@ -1,0 +1,38 @@
+--CREATING AUTHORS TABLE
+CREATE TABLE Authors (
+    AuthorID INT IDENTITY(1,1) PRIMARY KEY,
+    AuthorName VARCHAR(100) NOT NULL,
+    Country VARCHAR(50)
+);
+
+
+--CREATING BOOKS TABLE
+CREATE TABLE Books (
+    BookID INT IDENTITY(1,1) PRIMARY KEY,
+    Title VARCHAR(200) NOT NULL,
+    AuthorID INT,
+    Quantity INT,
+    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+
+--CREATING MEMBERS TABLE
+CREATE TABLE Memberss (
+    MemberID INT IDENTITY(1,1) PRIMARY KEY,
+    MemberName VARCHAR(100) NOT NULL,
+    Email VARCHAR(100),
+    Phone VARCHAR(15)
+);
+
+
+--CREATING BORROWRECORDS TABLE
+CREATE TABLE BorrowRecords (
+    BorrowID INT IDENTITY(1,1) PRIMARY KEY,
+    MemberID INT NOT NULL,
+    BookID INT NOT NULL,
+    BorrowDate DATE NOT NULL,
+    ReturnDate DATE,
+    FOREIGN KEY (MemberID) REFERENCES Members(MemberID),
+    FOREIGN KEY (BookID) REFERENCES Books(BookID)
+);
+
