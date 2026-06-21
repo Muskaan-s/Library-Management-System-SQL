@@ -46,7 +46,8 @@ BorrowRecords → tracks who took what and when
 
 ##  Project files
 - database_schema.sql  
-- sample_data.sql  
+- sample_data.sql
+- TablesCreation
 - queries.sql  
 - screenshots
    *Authors_Table
