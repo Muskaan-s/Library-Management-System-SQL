@@ -3,6 +3,11 @@
 ## 🧠 What I built
 A database system that simulates how a real library stores and manages its data using SQL.
 
+
+## Objective
+
+The objective of this project is to design and develop a Library Management System using SQL to efficiently store, manage, and retrieve library data such as books, authors, members, and borrowing records.
+
 ---
 
 ## 🔧 What I actually did (in order)
@@ -39,12 +44,7 @@ BorrowRecords → tracks who took what and when
 
 ---
 
-## 📌 Important part of project
-The main idea was to connect multiple tables using relationships instead of keeping data separately.
-
----
-
-## 📁 Project files
+##  Project files
 - database_schema.sql  
 - sample_data.sql  
 - queries.sql  
@@ -58,10 +58,56 @@ The main idea was to connect multiple tables using relationships instead of keep
 
 ---
 
-## 🎯 Result
-A working relational database that stores and retrieves library data successfully using SQL queries.
+## Insights / Learnings
+Learned how relational databases work in real applications
+Understood the importance of primary and foreign keys
+Practiced SQL commands like CREATE, INSERT, SELECT
+Learned how tables are connected using relationships
+Improved understanding of data organization and structure
+Gained experience in query execution and result analysis
 
----
+ 
+## Features of the Project
+Create database using SQL
+Design multiple related tables
+Insert large sample dataset
+Retrieve data using SELECT queries
+Maintain relationships between tables
+Track borrowing and return of books
 
-## 👤 Built by
-Muskaan
+
+## Tables Used
+Authors
+Books
+Members
+BorrowRecords
+
+
+##  Relationships
+One author can write multiple books
+One member can borrow multiple books
+BorrowRecords connects members and books
+
+
+## SQL Operations Used
+Database creation
+Table creation
+Data insertion
+Data retrieval
+📊 Sample Query
+SELECT * FROM Authors;
+SELECT * FROM Books;
+SELECT * FROM Members;
+SELECT * FROM BorrowRecords;
+## Output Screenshots
+All screenshots of table creation and query execution are stored in the screenshots folder.
+
+## Tools Used
+MySQL
+SQL
+GitHub
+
+## Result
+The system successfully stores and retrieves library data using SQL and demonstrates proper use of
+relational database concepts.
+
